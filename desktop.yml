@@ -1,4 +1,4 @@
 ---
 # Your run is described here
-- include: install.yml
-- include: configuration.yml
+- import_playbook: install.yml
+- import_playbook: configuration.yml

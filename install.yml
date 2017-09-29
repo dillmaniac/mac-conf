@@ -3,17 +3,44 @@
 - hosts: all
   roles:
   - role: osxc.packages
+    install_cask: no # Workaround
     brew_taps:
-    - caskroom/fonts
+      - caskroom/fonts
     brew_packages:
-    - git
-    - zsh
-    - vim
-    - the_silver_searcher
-    - ctags
-    - reattach-to-user-namespace
-    - tmux
+      - git
+      - zsh
+      - vim
+      - iperf
+      - tmux
+      - wget
+      - tree
+      - wakeonlan
     cask_packages:
-    - font-inconsolata-for-powerline
-    - iterm2
-    - macvim
+      - font-source-code-pro-for-powerline
+      - iterm2
+      - atom
+      - spotify
+      - adium
+      - alfred
+      - etcher
+- hosts: devel
+  roles:
+    - role: osxc.packages
+      install_cask: no # Workaround
+      brew_packages:
+        - git-extras
+      cask_packages:
+        - phpstorm
+        - pycharm
+        - gitkraken
+- hosts: devel-uc
+  roles:
+    - role: osxc.packages
+      install_cask: no # Workaround
+      brew_taps:
+        - osx-cross/avr
+      brew_packages:
+        - avr-gcc
+        - minicom
+      cask_packages:
+        - arduino

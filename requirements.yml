@@ -1,6 +1,18 @@
 ---
 # Ansible Galaxy Requirements
-- src: osxc.common-env
-- src: osxc.homebrew
-- src: osxc.packages
-- src: osxc.repository
+- name: osxc.common-env
+  src: https://github.com/sgerogia/osxc-common-env
+  scm: git
+  version: master
+
+- name: osxc.homebrew
+  src: https://github.com/itiut/homebrew
+  version: master
+
+- name: osxc.packages
+  src: https://github.com/sgerogia/osxc-packages
+  version: master
+
+- name: osxc.repository
+  src: https://github.com/sgerogia/osxc-repository
+  version: master

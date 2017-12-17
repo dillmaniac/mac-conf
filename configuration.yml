@@ -2,7 +2,7 @@
 # Configure your freshly installed software
 - hosts: all
   roles:
-  - role: Meuk.repository
+  - role: Meuk.osxc-repository
     clone_url: https://github.com/robbyrussell/oh-my-zsh.git
     dest: /Users/{{ ansible_user_id }}/.oh-my-zsh
   post_tasks:
@@ -13,4 +13,4 @@
 
 - hosts: all
   roles:
-  - Meuk.common-env
+  - Meuk.osxc-common-env

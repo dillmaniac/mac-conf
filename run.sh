@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [ -n `which pip` ]; then
+if ! type "pip" > /dev/null; then
   sudo easy_install pip
 fi
 
-if [ -n `which ansible` ]; then
+if ! type "ansible" > /dev/null; then
   sudo -H pip install ansible
 fi
 

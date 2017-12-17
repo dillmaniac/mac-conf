@@ -8,4 +8,4 @@ all:
         localhost
     devel_uc:
       hosts:
-        []
+        {}

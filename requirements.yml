@@ -1,7 +1,7 @@
 ---
 # Ansible Galaxy Requirements
 - name: osxc.common-env
-  src: https://github.com/sgerogia/osxc-common-env
+  src: https://github.com/Meuk/osxc-common-env
   scm: git
   version: master
 

@@ -5,7 +5,7 @@ if [ -n `which pip` ]; then
 fi
 
 if [ -n `which ansible` ]; then
-  sudo pip -H install ansible
+  sudo pip install -H ansible
 fi
 
 ansible-galaxy install -r requirements.yml

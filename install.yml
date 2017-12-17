@@ -9,7 +9,7 @@
     brew_packages:
       - git
       - zsh
-      - vim
+      - neovim
       - iperf
       - tmux
       - wget

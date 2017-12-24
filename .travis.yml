@@ -1,5 +1,4 @@
 os: osx
 
 script:
-  - ls -la
-  - run.sh
+  - $(PWD)/run.sh

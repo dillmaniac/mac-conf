@@ -33,6 +33,9 @@
         - phpstorm
         - pycharm
         - gitkraken
+        - virtualbox
+        - vagrant
+    - role: Phill93.homestead
 - hosts: devel-uc
   roles:
     - role: Meuk.osxc-packages

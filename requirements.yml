@@ -16,3 +16,7 @@
 - name: Meuk.osxc-repository
   src: https://github.com/Meuk/osxc-repository.git
   version: master
+
+- name: Phill93.homestead
+  src: https://github.com/Phill93/ansible-homestead
+  version: master

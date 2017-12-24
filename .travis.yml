@@ -1,4 +1,6 @@
 os: osx
+language: python
 
 script:
+  - ls -la
   - run.sh

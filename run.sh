@@ -8,7 +8,7 @@ if ! type "ansible" > /dev/null; then
   sudo -H pip install ansible
 fi
 
-git submoule update --remote --init
+git submodule update --remote --init
 
 ansible-galaxy install -r requirements.yml
 ansible-playbook desktop.yml

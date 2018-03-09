@@ -20,3 +20,7 @@
 - name: Phill93.homestead
   src: https://github.com/Phill93/ansible-homestead
   version: master
+
+- name: jgkim.atom
+  src: https://github.com/jgkim/ansible-role-atom.git
+  version: master

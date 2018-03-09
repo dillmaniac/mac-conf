@@ -1,6 +1,16 @@
 ---
 # Configure your freshly installed software
 - hosts: all
+  roles:
+    - role: jgkim.atom
+      atom_upgrade_all: True
+      atom_packages:
+        - git-projects
+        - minimap
+        - minimap-cursorline
+        - minimap-git-diff
+        - tree-view-git-status
+        - platformio-ide-terminal
   post_tasks:
   - copy: src=dotfiles/zshrc dest=/Users/{{ ansible_user_id }}/.zshrc backup=yes
   - copy: src=dotfiles/functions dest=/Users/{{ ansible_user_id }}/.functions backup=yes

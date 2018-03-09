@@ -30,8 +30,10 @@
     tags: mas
     mas_signin_dialog: no
     mas_installed_apps:
-      - { id: 866773894, name: "Quiver" }
-      - { id: 419330170, name: "Moom" }
+      - id: 866773894
+        name: "Quiver"
+      - id: 419330170
+        name: "Moom"
 
 - hosts: devel
   roles:
@@ -50,7 +52,8 @@
       tags: mas
       mas_signin_dialog: no
       mas_installed_apps:
-        - { id: 497799835, name: "Xcode" }
+        - id: 497799835
+          name: "Xcode"
 
 - hosts: devel-uc
   roles:

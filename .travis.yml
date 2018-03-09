@@ -1,4 +1,4 @@
 os: osx
 
 script:
-  - $(PWD)/run.sh
+  - $(PWD)/run.sh --skip-tags mas

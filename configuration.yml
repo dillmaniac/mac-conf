@@ -14,6 +14,9 @@
   post_tasks:
   - copy: src=dotfiles/zshrc dest=/Users/{{ ansible_user_id }}/.zshrc backup=yes
   - copy: src=dotfiles/functions dest=/Users/{{ ansible_user_id }}/.functions backup=yes
+  - copy: src=dotfiles/gpg.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg.conf
+  - copy: src=dotfiles/gpg-agent.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg-agent.conf
+  - copy: src=dotfiles/sshcontrol dest=/Users/{{ ansible_user_id }}/.gnupg/sshcontrol
   - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
   - user: name={{ ansible_user_id }} shell=/usr/local/bin/zsh
 

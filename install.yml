@@ -36,6 +36,7 @@
         - gitkraken
         - virtualbox
         - vagrant
+        - git-flow
     - role: Phill93.homestead
 - hosts: devel-uc
   roles:

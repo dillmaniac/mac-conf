@@ -24,4 +24,4 @@
 
 - hosts: pc
   post_tasks:
-    - shell: sudo cp files/pc_tastatur.keylayout "/Library/Keyboard Layouts/"
+    - shell: if [ ! -f /Library/Keyboard Layouts/pc_tastatur.keylayout ]; then sudo cp files/pc_tastatur.keylayout "/Library/Keyboard Layouts/";fi

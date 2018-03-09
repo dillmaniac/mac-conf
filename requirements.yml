@@ -24,3 +24,5 @@
 - name: jgkim.atom
   src: https://github.com/jgkim/ansible-role-atom.git
   version: master
+
+- name: geerlingguy.mas

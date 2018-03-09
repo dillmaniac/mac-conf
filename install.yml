@@ -25,6 +25,9 @@
       - alfred
       - etcher
       - nextcloud
+  - role: geerlingguy.mas
+    mas_signin_dialog: no
+
 - hosts: devel
   roles:
     - role: Meuk.osxc-packages

@@ -19,4 +19,4 @@
 
 - hosts: pc
   post_tasks:
-    - copy: src=files/pc_tastatur.keylayout dest=/Library/Keyboard\ Layouts/
+    - shell: sudo cp files/pc_tastatur.keylayout "/Library/Keyboard Layouts/"

@@ -17,6 +17,8 @@
   - copy: src=dotfiles/gpg.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg.conf
   - copy: src=dotfiles/gpg-agent.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg-agent.conf
   - copy: src=dotfiles/sshcontrol dest=/Users/{{ ansible_user_id }}/.gnupg/sshcontrol
+  - copy: src=dotfiles/gitconfig dest=/Users/{{ ansible_user_id }}/.gitconfig backup=yes
+  - copy: src=dotfiles/gitignore dest=/Users/{{ ansible_user_id }}/.gitignore backup=yes
   - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
   - user: name={{ ansible_user_id }} shell=/usr/local/bin/zsh
 

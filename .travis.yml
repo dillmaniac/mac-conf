@@ -1,5 +1,9 @@
 os: osx
 osx_image: xcode9.2
 
+before_install:
+  - brew upgrade openssl || brew install openssl || true
+  - brew upgrade python || brew install python || true
+
 script:
   - $(PWD)/run.sh --skip-tags mas

@@ -15,6 +15,7 @@
       - wget
       - tree
       - wakeonlan
+      - antigen
     cask_packages:
       - font-source-code-pro-for-powerline
       - iterm2

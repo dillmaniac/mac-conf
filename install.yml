@@ -32,8 +32,7 @@
       brew_packages:
         - git-extras
       cask_packages:
-        - phpstorm
-        - pycharm
+        - jetbrains-toolbox
         - gitkraken
         - virtualbox
         - vagrant

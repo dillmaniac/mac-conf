@@ -9,3 +9,6 @@ all:
     devel_uc:
       hosts:
         {}
+    pc:
+      hosts:
+        {}

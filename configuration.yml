@@ -16,3 +16,7 @@
   - copy: src=dotfiles/functions dest=/Users/{{ ansible_user_id }}/.functions backup=yes
   - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
   - user: name={{ ansible_user_id }} shell=/usr/local/bin/zsh
+
+- hosts: pc
+  post_tasks:
+    - copy: src=files/pc_tastatur.keylayout dest=/Library/Keyboard\ Layouts/

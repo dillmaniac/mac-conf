@@ -31,12 +31,12 @@
       install_cask: no # Workaround
       brew_packages:
         - git-extras
+        - git-flow
       cask_packages:
         - jetbrains-toolbox
         - gitkraken
         - virtualbox
         - vagrant
-        - git-flow
     - role: Phill93.homestead
 - hosts: devel-uc
   roles:

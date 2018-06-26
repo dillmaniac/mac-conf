@@ -6,4 +6,4 @@ before_install:
   - brew upgrade python || brew install python || true
 
 script:
-  - $(PWD)/run.sh --skip-tags mas,virtualbox
+  - travis_wait 30 $(PWD)/run.sh --skip-tags mas,virtualbox

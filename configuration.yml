@@ -20,7 +20,9 @@
   - copy: src=dotfiles/gitconfig dest=/Users/{{ ansible_user_id }}/.gitconfig backup=yes
   - copy: src=dotfiles/gitignore dest=/Users/{{ ansible_user_id }}/.gitignore backup=yes
   - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
+    become: true
   - user: name={{ ansible_user_id }} shell=/usr/local/bin/zsh
+    become: true
 
 - hosts: pc
   post_tasks:

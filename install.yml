@@ -51,6 +51,11 @@
         - gitkraken
         - virtualbox
         - vagrant
+    - role: Meuk.osxc-packages
+      install_cask: no # Workaround
+      tags: virtualbox
+      cask_packages:
+        - virtualbox
     - role: Phill93.homestead
     - role: geerlingguy.mas
       tags: mas

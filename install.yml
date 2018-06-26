@@ -5,7 +5,7 @@
   - role: Meuk.osxc-packages
     install_cask: no # Workaround
     brew_taps:
-      - caskroom/fonts
+      - homebrew/cask-fonts
       - buo/cask-upgrade
     brew_packages:
       - git

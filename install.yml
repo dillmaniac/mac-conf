@@ -18,6 +18,8 @@
       - wakeonlan
       - antigen
       - minicom
+      - pass
+      - pwgen
     cask_packages:
       - font-source-code-pro-for-powerline
       - iterm2

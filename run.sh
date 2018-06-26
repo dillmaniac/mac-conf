@@ -3,7 +3,7 @@
 if ! type "pip" > /dev/null; then
   sudo easy_install pip
 else
-  curl https://bootstrap.pypa.io/get-pip.py | python
+  sudo curl https://bootstrap.pypa.io/get-pip.py | sudo python
 fi
 
 if ! type "ansible" > /dev/null; then

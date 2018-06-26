@@ -3,7 +3,7 @@
 - hosts: all
   roles:
   - role: Meuk.osxc-packages
-    install_cask: no # Workaround
+    install_cask: false         # Workaround
     brew_taps:
       - homebrew/cask-fonts
       - buo/cask-upgrade
@@ -32,7 +32,7 @@
       - gpg-suite
   - role: geerlingguy.mas
     tags: mas
-    mas_signin_dialog: no
+    mas_signin_dialog: false
     mas_installed_apps:
       - id: 866773894
         name: "Quiver"
@@ -42,7 +42,7 @@
 - hosts: devel
   roles:
     - role: Meuk.osxc-packages
-      install_cask: no # Workaround
+      install_cask: false       # Workaround
       brew_packages:
         - git-extras
         - git-flow
@@ -52,14 +52,14 @@
         - virtualbox
         - vagrant
     - role: Meuk.osxc-packages
-      install_cask: no # Workaround
+      install_cask: false       # Workaround
       tags: virtualbox
       cask_packages:
         - virtualbox
     - role: Phill93.homestead
     - role: geerlingguy.mas
       tags: mas
-      mas_signin_dialog: no
+      mas_signin_dialog: false
       mas_installed_apps:
         - id: 497799835
           name: "Xcode"
@@ -67,7 +67,7 @@
 - hosts: devel-uc
   roles:
     - role: Meuk.osxc-packages
-      install_cask: no # Workaround
+      install_cask: false       # Workaround
       brew_taps:
         - osx-cross/avr
       brew_packages:

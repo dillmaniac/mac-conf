@@ -3,7 +3,7 @@
 - hosts: all
   roles:
     - role: jgkim.atom
-      atom_upgrade_all: True
+      atom_upgrade_all: true
       atom_packages:
         - git-projects
         - minimap
@@ -12,17 +12,17 @@
         - tree-view-git-status
         - platformio-ide-terminal
   post_tasks:
-  - copy: src=dotfiles/zshrc dest=/Users/{{ ansible_user_id }}/.zshrc backup=yes
-  - copy: src=dotfiles/functions dest=/Users/{{ ansible_user_id }}/.functions backup=yes
-  - copy: src=dotfiles/gpg.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg.conf
-  - copy: src=dotfiles/gpg-agent.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg-agent.conf
-  - copy: src=dotfiles/sshcontrol dest=/Users/{{ ansible_user_id }}/.gnupg/sshcontrol
-  - copy: src=dotfiles/gitconfig dest=/Users/{{ ansible_user_id }}/.gitconfig backup=yes
-  - copy: src=dotfiles/gitignore dest=/Users/{{ ansible_user_id }}/.gitignore backup=yes
-  - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
-    become: true
-  - user: name={{ ansible_user_id }} shell=/usr/local/bin/zsh
-    become: true
+    - copy: src=dotfiles/zshrc dest=/Users/{{ ansible_user_id }}/.zshrc backup=yes
+    - copy: src=dotfiles/functions dest=/Users/{{ ansible_user_id }}/.functions backup=yes
+    - copy: src=dotfiles/gpg.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg.conf
+    - copy: src=dotfiles/gpg-agent.conf dest=/Users/{{ ansible_user_id }}/.gnupg/gpg-agent.conf
+    - copy: src=dotfiles/sshcontrol dest=/Users/{{ ansible_user_id }}/.gnupg/sshcontrol
+    - copy: src=dotfiles/gitconfig dest=/Users/{{ ansible_user_id }}/.gitconfig backup=yes
+    - copy: src=dotfiles/gitignore dest=/Users/{{ ansible_user_id }}/.gitignore backup=yes
+    - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
+      become: true
+    - user: name={{ ansible_user_id }} shell=/usr/local/bin/zsh
+      become: true
 
 - hosts: pc
   post_tasks:

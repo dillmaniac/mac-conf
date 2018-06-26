@@ -17,6 +17,7 @@
       - tree
       - wakeonlan
       - antigen
+      - minicom
     cask_packages:
       - font-source-code-pro-for-powerline
       - iterm2

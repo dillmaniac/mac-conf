@@ -54,7 +54,6 @@
       cask_packages:
         - jetbrains-toolbox
         - gitkraken
-        - virtualbox
         - vagrant
     - role: Meuk.osxc-packages
       install_cask: false       # Workaround

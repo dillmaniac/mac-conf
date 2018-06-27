@@ -30,6 +30,7 @@
       - etcher
       - nextcloud
       - gpg-suite
+      - omnifocus
   - role: geerlingguy.mas
     tags: mas
     mas_signin_dialog: false

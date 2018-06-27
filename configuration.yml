@@ -20,6 +20,7 @@
     - copy: src=dotfiles/gitconfig dest=/Users/{{ ansible_user_id }}/.gitconfig backup=yes
     - copy: src=dotfiles/gitignore dest=/Users/{{ ansible_user_id }}/.gitignore backup=yes
     - copy: src=dotfiles/.vimrc dest=/Users/{{ ansible_user_id }}/.vimrc backup=yes
+    - copy: src=dotfiles/aliases dest=/Users/{{ ansible_user_id }}/.aliases backup=yes
     - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
       become: true
     - user: name={{ ansible_user_id }} shell=/usr/local/bin/zsh

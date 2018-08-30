@@ -20,6 +20,10 @@
       - minicom
       - pass
       - pwgen
+      - bat
+      - prettyping
+      - diff-so-fancy
+      - noti
     cask_packages:
       - font-source-code-pro-for-powerline
       - iterm2

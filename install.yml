@@ -35,6 +35,9 @@
       - nextcloud
       - gpg-suite-no-mail
       - omnifocus
+      - yubico-yubikey-manager
+      - presentation
+      - texpad
   - role: geerlingguy.mas
     tags: mas
     mas_signin_dialog: false
@@ -61,6 +64,9 @@
         - gitkraken
         - vagrant
         - insomnia
+        - xca
+        - sequel-pro
+        - mqttfx
     - role: Meuk.osxc-packages
       install_cask: false       # Workaround
       tags: virtualbox
@@ -85,3 +91,4 @@
         - minicom
       cask_packages:
         - arduino
+        - ftdi-vcp-driver

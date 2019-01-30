@@ -86,6 +86,7 @@
       install_cask: false       # Workaround
       brew_taps:
         - osx-cross/avr
+        - homebrew/cask-drivers
       brew_packages:
         - avr-gcc
         - minicom

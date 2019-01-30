@@ -33,7 +33,7 @@
       - alfred
       - etcher
       - nextcloud
-      - gpg-suite
+      - gpg-suite-no-mail
       - omnifocus
   - role: geerlingguy.mas
     tags: mas

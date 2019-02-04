@@ -10,7 +10,7 @@
   version: master
 
 - name: Meuk.osxc-packages
-  src: https://github.com/Meuk/osxc-packages.git
+  src: https://github.com/Phill93/osxc-packages.git 
   version: master
 
 - name: Meuk.osxc-repository

@@ -38,6 +38,12 @@
       - yubico-yubikey-manager
       - presentation
       - texpad
+      - qlcolorcode
+      - qlstephen
+      - qlmarkdown
+      - quicklook-json
+      - suspicious-package
+      - betterzip
   - role: geerlingguy.mas
     tags: mas
     mas_signin_dialog: false

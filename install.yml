@@ -7,6 +7,7 @@
     brew_taps:
       - homebrew/cask-fonts
       - buo/cask-upgrade
+      - heroku/brew
     brew_packages:
       - git
       - zsh
@@ -24,6 +25,7 @@
       - prettyping
       - diff-so-fancy
       - noti
+      - heroku
     cask_packages:
       - font-source-code-pro-for-powerline
       - iterm2
@@ -43,7 +45,7 @@
       - qlmarkdown
       - quicklook-json
       - suspicious-package
-      - betterzip
+      - visual-studio-code
   - role: geerlingguy.mas
     tags: mas
     mas_signin_dialog: false
@@ -52,6 +54,8 @@
         name: "Quiver"
       - id: 419330170
         name: "Moom"
+      - id: 1451685025
+        name: "WireGuard"
   post_tasks:
     - git:
         repo: 'https://github.com/VundleVim/Vundle.vim.git'

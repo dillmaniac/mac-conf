@@ -43,7 +43,6 @@
       - qlmarkdown
       - quicklook-json
       - suspicious-package
-      - visual-studio-code
   - role: geerlingguy.mas
     tags: mas
     mas_signin_dialog: false

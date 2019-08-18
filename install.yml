@@ -39,7 +39,7 @@
       - omnifocus
       - presentation
       - texpad
-      - qlcolorcode
+      #- qlcolorcode Temporary
       - qlstephen
       - qlmarkdown
       - quicklook-json

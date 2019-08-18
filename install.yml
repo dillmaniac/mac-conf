@@ -29,7 +29,6 @@
     cask_packages:
       - font-source-code-pro-for-powerline
       - iterm2
-      - atom
       - spotify
       - adium
       - alfred

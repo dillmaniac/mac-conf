@@ -24,3 +24,5 @@
 - name: geerlingguy.mas
 
 - name: alphahydrae.vscode
+  src: https://github.com/Phill93/ansible-vscode.git
+  version: master

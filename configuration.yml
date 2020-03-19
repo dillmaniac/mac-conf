@@ -20,8 +20,11 @@
     - file: src={{playbook_dir}}/dotfiles/gitconfig dest=/Users/{{ ansible_user_id }}/.gitconfig state=link force=yes
     - file: src={{playbook_dir}}/dotfiles/gitignore dest=/Users/{{ ansible_user_id }}/.gitignore state=link force=yes
     - file: src={{playbook_dir}}/dotfiles/.vimrc dest=/Users/{{ ansible_user_id }}/.vimrc state=link force=yes
+    - file: src={{playbook_dir}}/dotfiles/editorconfig dest=/Users/{{ ansible_user_id }}/.editorconfig state=link force=yes
+    - file: src={{playbook_dir}}/dotfiles/assh.yaml dest=/Users/{{ ansible_user_id }}/.ssh/assh.yml state=link force=yes
     - shell: vim +PluginInstall +qall
     - shell: vim +PluginUpdate +qall
+    - shell: assh config build > ~/.ssh/config
     - file: src={{playbook_dir}}/dotfiles/aliases dest=/Users/{{ ansible_user_id }}/.aliases state=link force=yes
     - lineinfile: path=/etc/shells state=present line=/usr/local/bin/zsh
       become: true

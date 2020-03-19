@@ -31,7 +31,6 @@
     cask_packages:
       - font-jetbrains-mono
       - iterm2
-      - atom
       - spotify
       - adium
       - alfred
@@ -39,7 +38,6 @@
       - nextcloud
       - gpg-suite-no-mail
       - omnifocus
-      - yubico-yubikey-manager
       - presentation
       - texpad
       - visual-studio-code
@@ -73,7 +71,7 @@
         - insomnia
         - xca
         - sequel-pro
-        - mqttfx
+        #- mqttfx Temporary
     - role: Meuk.osxc-packages
       install_cask: false       # Workaround
       tags: virtualbox

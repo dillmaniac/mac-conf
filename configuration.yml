@@ -1,16 +1,14 @@
 ---
 # Configure your freshly installed software
 - hosts: all
-  roles:
-    - role: jgkim.atom
-      atom_upgrade_all: true
-      atom_packages:
-        - git-projects
-        - minimap
-        - minimap-cursorline
-        - minimap-git-diff
-        - tree-view-git-status
-        - platformio-ide-terminal
+  roles: 
+    - role: alphahydrae.vscode
+      vscode_extensions:
+        - nonoroazoro.syncing
+        - platformio.platformio-ide
+        - openhab.openhab
+        - vscoss.vscode-ansible
+      vscode_homebrew_user: "{{ ansible_user_id }}"
   post_tasks:
     - file: src={{playbook_dir}}/dotfiles/zshrc dest=/Users/{{ ansible_user_id }}/.zshrc state=link force=yes
     - file: src={{playbook_dir}}/dotfiles/functions dest=/Users/{{ ansible_user_id }}/.functions state=link force=yes

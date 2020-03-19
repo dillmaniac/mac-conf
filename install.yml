@@ -26,8 +26,10 @@
       - diff-so-fancy
       - noti
       - heroku
+      - assh
+      - telnet
     cask_packages:
-      - font-source-code-pro-for-powerline
+      - font-jetbrains-mono
       - iterm2
       - atom
       - spotify
@@ -40,11 +42,6 @@
       - yubico-yubikey-manager
       - presentation
       - texpad
-      - qlcolorcode
-      - qlstephen
-      - qlmarkdown
-      - quicklook-json
-      - suspicious-package
       - visual-studio-code
   - role: geerlingguy.mas
     tags: mas
@@ -100,6 +97,7 @@
       brew_packages:
         - avr-gcc
         - minicom
+        - platformio
       cask_packages:
         - arduino
         - ftdi-vcp-driver

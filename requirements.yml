@@ -1,25 +1,6 @@
 ---
 # Ansible Galaxy Requirements
-- name: Meuk.osxc-common-env
-  src: https://github.com/Meuk/osxc-common-env
-  scm: git
-  version: master
-
-- name: Meuk.osxc-homebrew
-  src: https://github.com/Meuk/osxc-homebrew.git
-  version: master
-
-- name: Meuk.osxc-packages
-  src: https://github.com/Phill93/osxc-packages.git 
-  version: master
-
-- name: Meuk.osxc-repository
-  src: https://github.com/Meuk/osxc-repository.git
-  version: master
-
-- name: Phill93.homestead
-  src: https://github.com/Phill93/ansible-homestead
-  version: master
+- name: geerlingguy.homebrew
 
 - name: geerlingguy.mas
 

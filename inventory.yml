@@ -2,13 +2,3 @@ all:
   hosts:
     localhost:
       ansible_connection: local
-  children:
-    devel:
-      hosts:
-        localhost
-    devel_uc:
-      hosts:
-        {}
-    pc:
-      hosts:
-        {}

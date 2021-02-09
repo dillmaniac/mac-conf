@@ -1,13 +1,7 @@
 #!/bin/bash
 
-if ! type "pip" > /dev/null; then
-  sudo easy_install pip
-else
-  sudo curl https://bootstrap.pypa.io/get-pip.py | sudo python
-fi
-
 if ! type "ansible" > /dev/null; then
-  sudo -H pip install ansible
+  sudo -H python3 -m pip install ansible
 fi
 
 git submodule update --remote --init

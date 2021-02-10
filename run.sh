@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! type "ansible" > /dev/null; then
-  export CRYPTOGRAPHY_DONT_BUILD_RUST=1
+  sudo python -m pip install -U pip
   sudo -H python3 -m pip install ansible
 fi
 

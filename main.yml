@@ -61,8 +61,8 @@
       tags:
         - vim
         - adjustments
-    
-    - name: Run Vundle Install
+
+    - name: Run Vundle Install # noqa np-handler
       ansible.builtin.command: "vim +PluginInstall +qall"
       become: false
       when: vundle_git.changed

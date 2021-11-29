@@ -51,6 +51,21 @@
         - gpg
         - adjustments
 
+    - name: Install Vundle
+      ansible.builtin.git:
+        repo: 'https://github.com/VundleVim/Vundle.vim.git'
+        dest: /Users/{{ ansible_user_id }}/.vim/bundle/Vundle.vim
+      become: false
+      tags:
+        - vim
+        - adjustments
+    
+    - name: Run Vundle Install
+      ansible.builtin.command: "vim +PlugInstall +qall"
+      become: false
+      tags:
+        - vim
+        - adjustments
   pre_tasks:
 
     - name: Install Rosetta 2

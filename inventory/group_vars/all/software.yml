@@ -38,7 +38,6 @@ homebrew_cask_apps:
   - ferdi
   - jetbrains-toolbox
   - vagrant
-  - ftdi-vcp-driver
   - bartender
   - caffeine
 homebrew_taps: 

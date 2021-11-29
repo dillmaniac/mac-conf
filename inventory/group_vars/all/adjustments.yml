@@ -1,7 +1,7 @@
 ---
 
 # Dotfiles
-dotfiles_repo: "git@github.com:Phill93/dotfiles.git"
+dotfiles_repo: "https://github.com/Phill93/dotfiles.git"
 dotfiles_repo_version: master
 dotfiles_repo_local_destination: "~/.dotfiles"
 dotfiles_repo_accept_hostkey: true

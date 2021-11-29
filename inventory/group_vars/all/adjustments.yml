@@ -41,6 +41,10 @@ dockitems_remove:
   - TV
   - Musik
   - Podcasts
+  - Keynote
+  - Numbers
+  - Pages
+  - AppStore
 
 dockitems_persist:
   - name: "Visual Studio Code"

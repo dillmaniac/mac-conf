@@ -51,6 +51,8 @@
         - gpg
         - adjustments
 
+  pre_tasks:
+  
     - name: Install Rosetta 2
       ansible.builtin.command: "softwareupdate --install-rosetta --agree-to-license"
       when: "'arm64' in ansible_machine"

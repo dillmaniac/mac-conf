@@ -40,5 +40,4 @@ jobs:
 
       - name: Lint code.
         run: |
-          rm -rf ../../../../root/.cache
-          ansible-lint main.yml
+          ansible-lint -c .ansible-lint main.yml

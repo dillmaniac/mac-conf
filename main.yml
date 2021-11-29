@@ -1,7 +1,7 @@
 ---
 - hosts: all
   environment:
-    PATH: "{{ ansible_env.PATH }}:/usr/local/bin/"
+    PATH: "{{ ansible_env.PATH }}:/usr/local/bin/:/opt/homebew/bin"
   roles:
     - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.mac.homebrew
@@ -52,7 +52,7 @@
         - adjustments
 
   pre_tasks:
-  
+
     - name: Install Rosetta 2
       ansible.builtin.command: "softwareupdate --install-rosetta --agree-to-license"
       when: "'arm64' in ansible_machine"

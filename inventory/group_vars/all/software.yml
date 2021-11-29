@@ -40,7 +40,7 @@ homebrew_cask_apps:
   - vagrant
   - bartender
   - caffeine
-homebrew_taps: 
+homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-fonts

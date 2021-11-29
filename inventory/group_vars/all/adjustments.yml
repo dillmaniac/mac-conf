@@ -55,5 +55,5 @@ dockitems_persist:
     path: "/Applications/Spotify.app/"
 
 # GPG
-gpg_public_keys: 
+gpg_public_keys:
   - mail@phill93.de

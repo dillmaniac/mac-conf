@@ -2,8 +2,5 @@
 
 all:
   hosts:
-    #127.0.0.1:
-    #  ansible_connection: local
-    172.16.36.128:
-      ansible_user: danielbacher
-      ansible_port: 22
+    127.0.0.1:
+      ansible_connection: local

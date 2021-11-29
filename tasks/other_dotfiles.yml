@@ -1,0 +1,22 @@
+---
+  - name: Create dotfile target dirs
+    ansible.builtin.file:
+      dest: "{{ item.target_dir }}"
+      state: directory
+      mode: "{{ item.target_dir_mode | default(755) }}"
+    become: false
+    when: item.target_dir
+    tags:
+      - dotfiles
+      - adjustments
+
+  - name: Link other dotfiles
+    ansible.builtin.file:
+      src: "{{ dotfiles_repo_local_destination }}/{{ item.name }}"
+      dest: "{{ item.target }}"
+      state: link
+      force: true
+    become: false
+    tags:
+      - dotfiles
+      - adjustments

@@ -1,0 +1,53 @@
+---
+- hosts: all
+  environment:
+    PATH: "{{ ansible_env.PATH }}:/usr/local/bin/"
+  roles:
+    - role: elliotweiser.osx-command-line-tools
+    - role: geerlingguy.mac.homebrew
+      tags:
+        - homebrew
+        - software
+    - role: geerlingguy.mac.mas
+      tags:
+        - mas
+        - software
+    - role: geerlingguy.dotfiles
+      tags:
+        - dotfiles
+        - adjustments
+    - role: geerlingguy.mac.dock
+      tags:
+        - dock
+        - adjustments
+  tasks:
+    - name: link other dotfiles
+      include_tasks: "tasks/other_dotfiles.yml"
+      with_items: "{{ dotfiles_link_other }}"
+      tags:
+        - dotfiles
+        - adjustments
+
+    - name: Import gpg public keys
+      ansible.builtin.command: "gpg --auto-key-locate keyserver --locate-keys {{ item }}"
+      with_items: "{{ gpg_public_keys }}"
+      register: gpg_import
+      changed_when: "'imported' in gpg_import.stderr"
+      become: false
+      environment:
+        - LANG: en
+      tags:
+        - gpg
+        - adjustments
+
+    - name: Update gpg public keys
+      ansible.builtin.command: "gpg --refresh"
+      register: gpg_sync
+      changed_when: "'new signatures' in gpg_sync.stderr"
+      become: false
+      environment:
+        - LANG: en
+      tags:
+        - gpg
+        - adjustments
+

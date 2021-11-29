@@ -1,0 +1,69 @@
+---
+
+# Homebrew
+homebrew_upgrade_all_packages: true
+homebrew_installed_packages:
+  - git
+  - zsh
+  - neovim
+  - iperf
+  - tmux
+  - wget
+  - tree
+  - wakeonlan
+  - antigen
+  - minicom
+  - pass
+  - pwgen
+  - bat
+  - prettyping
+  - diff-so-fancy
+  - noti
+  - assh
+  - telnet
+  - tio
+  - git-extras
+  - git-flow
+  - platformio
+homebrew_cask_apps:
+  - font-jetbrains-mono
+  - iterm2
+  - spotify
+  - alfred
+  - balenaetcher
+  - nextcloud
+  - gpg-suite-no-mail
+  - presentation
+  - visual-studio-code
+  - ferdi
+  - jetbrains-toolbox
+  - vagrant
+  - ftdi-vcp-driver
+  - bartender
+  - caffeine
+homebrew_taps: 
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+  - homebrew/cask-drivers
+
+# Mac App Store (MAS)
+mas_signin_dialog: false
+mas_upgrade_all_apps: true
+mas_installed_apps:
+      - id: 419330170
+        name: "Moom"
+      - id: 1451685025
+        name: "WireGuard"
+      - id: 1035236694
+        name: "Commander One - file manager"
+      - id: 1295203466
+        name: "Microsoft Remote Desktop"
+      - id: 1440147259
+        name: "AdGuard for Safari"
+      - id: 409201541
+        name: Pages
+      - id: 409183694
+        name: Keynote
+      - id: 409203825
+        name: Numbers

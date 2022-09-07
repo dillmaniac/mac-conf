@@ -25,6 +25,13 @@ homebrew_installed_packages:
   - git-extras
   - git-flow
   - platformio
+  - age
+  - argocd
+  - kubernetes-cli
+  - kustomize
+  - mqtt-cli
+  - poetry
+  - watch
 homebrew_cask_apps:
   - font-jetbrains-mono
   - iterm2
@@ -41,11 +48,18 @@ homebrew_cask_apps:
   - bartender
   - caffeine
   - viscosity
+  - aldente
+  - insomnia
+  - monitorcontrol
+  - obsidian
+  - tailscale
+  - oversight
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-fonts
   - homebrew/cask-drivers
+  - hivemq/mqtt-cli
 
 # Mac App Store (MAS)
 mas_signin_dialog: false
@@ -67,6 +81,8 @@ mas_installed_apps:
     name: Keynote
   - id: 409203825
     name: Numbers
+  - id: 818195014
+    name: OX Drive
 mas_uninstalled_apps:
   - id: 40891434
     name: iMovie

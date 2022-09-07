@@ -14,7 +14,7 @@ dotfiles_files:
   - .gitconfig
   - .gitignore
 dotfiles_link_other:
-  - name: assh.yml
+  - name: assh.yaml
     target: "~/.ssh/assh.yml"
     target_dir: "~/.ssh"
     target_dir_mode: "0700"
@@ -53,6 +53,8 @@ dockitems_persist:
     path: "/Applications/iTerm.app/"
   - name: "Spotify"
     path: "/Applications/Spotify.app/"
+  - name: "Obisidian"
+    path:  "/Applications/Obsidian.app"
 
 # GPG
 gpg_public_keys:

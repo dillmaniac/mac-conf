@@ -36,7 +36,6 @@ homebrew_cask_apps:
   - gpg-suite-no-mail
   - visual-studio-code
   - caffeine
-  - viscosity
   - monitorcontrol
   - firefox
   - google-chrome

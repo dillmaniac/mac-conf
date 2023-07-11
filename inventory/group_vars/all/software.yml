@@ -5,7 +5,6 @@ homebrew_upgrade_all_packages: true
 homebrew_installed_packages:
   - git
   - zsh
-  - neovim
   - iperf
   - tmux
   - wget
@@ -19,14 +18,10 @@ homebrew_installed_packages:
   - prettyping
   - diff-so-fancy
   - noti
-  - assh
   - telnet
   - tio
   - git-extras
   - git-flow
-  - platformio
-  - age
-  - argocd
   - kubernetes-cli
   - kustomize
   - mqtt-cli
@@ -36,41 +31,28 @@ homebrew_cask_apps:
   - font-jetbrains-mono
   - iterm2
   - spotify
-  - alfred
   - balenaetcher
   - nextcloud
   - gpg-suite-no-mail
-  - presentation
   - visual-studio-code
-  - ferdi
-  - jetbrains-toolbox
-  - vagrant
-  - bartender
   - caffeine
   - viscosity
-  - aldente
-  - insomnia
   - monitorcontrol
-  - obsidian
-  - tailscale
-  - oversight
+  - firefox
+  - google-chrome
+  - keepassxc
+  - mattermost
+  - vlc
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-fonts
-  - homebrew/cask-drivers
   - hivemq/mqtt-cli
 
 # Mac App Store (MAS)
 mas_signin_dialog: false
 mas_upgrade_all_apps: true
 mas_installed_apps:
-  - id: 419330170
-    name: "Moom"
-  - id: 1451685025
-    name: "WireGuard"
-  - id: 1035236694
-    name: "Commander One - file manager"
   - id: 1295203466
     name: "Microsoft Remote Desktop"
   - id: 1440147259
@@ -81,8 +63,6 @@ mas_installed_apps:
     name: Keynote
   - id: 409203825
     name: Numbers
-  - id: 818195014
-    name: OX Drive
 mas_uninstalled_apps:
   - id: 40891434
     name: iMovie
